@@ -1,0 +1,145 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+    display: grid;   
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #FFFAF5;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav__container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+}
+
+
+
+.nav__toggle-btn{
+    display: none;
+}
+
+
+
+.logo{
+    margin-left: 3rem;
+}
+
+.nav__links{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.nav__links a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none !important;
+    list-style-type: none !important;
+}
+
+.btn__quote{
+    font-weight: bolder;
+    margin-right: 6rem;
+    padding: 10px 15px;
+    background-color: #FB8402;
+    font-weight: bolder;
+    cursor: pointer;
+    border: none;
+    border-radius: 9px;
+}
+
+.active-nav{
+    position: relative;
+}
+.active-nav::after{
+    content: '';
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    left: calc(50% - 0.6rem);
+    transform: rotate(45deg);
+    margin-top: 0.9rem;
+}
+
+/* Media queries for Nav */
+
+@media screen and (max-width: 400px) {
+    .container .text-3{
+        font-size: 30px !important;
+    }
+    .container .text-1{
+        margin-left: -1.5rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav__toggle-btn{
+        display: inline-block;
+        border: none;
+        background-color: none;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: rgb(165, 160, 160);
+        font-size: 2.5rem;
+        margin-right: 1rem;
+    }
+    .nav__links .btn__quote{
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+    } 
+    .nav__links{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .active-nav, .active-nav::after{
+        display: none;
+    }
+    .nav__links a:hover{
+        border-bottom: none;
+    }
+
+    .nav__links li{
+        height: 5rem;
+        width: 170%;
+        position: relative;
+        box-shadow: -2rem 2rem 5rem rgba(248, 245, 245, 0.4);
+    }
+
+
+    .nav__links li a{
+        background-color: rgb(233, 227, 238);
+        height: 100%;
+        color: gray;
+        width: 150%;
+        display: flex;
+        align-items: left;
+        padding: 1rem 5rem 1rem 3rem
+    }
+
+    .active-nav{
+        display: none;
+    }
+
+    .show__nav{
+        display: flex;
+    }
+
+    .hide__nav{
+        display: none;
+    }
+
+}

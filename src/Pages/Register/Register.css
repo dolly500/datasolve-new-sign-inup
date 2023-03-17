@@ -1,0 +1,81 @@
+h3{
+    text-align: center;
+    padding: 16px;
+}
+
+
+.container-signin{
+  margin: 1rem auto;
+  padding: 10px;
+  max-width: 410px;
+  z-index: 99;
+}
+
+.regis{
+    max-width: 500px;
+}
+
+.container-signin .register{
+    height: 120vh !important;
+}
+
+.container-signin .texting{
+    color: #20BB2F;
+}
+
+.form-wrap{
+  background: rgb(248, 250, 249);
+  padding: 15px 25px;
+  color: rgb(7, 6, 6);
+  border-radius: 9px;
+  margin-top: 1rem;
+}
+
+
+.form-wrap .form-group {
+    margin-top: 20px;
+  }
+
+  .form-wrap .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background: #114F5E;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+    border: none;
+    font-weight: bolder;
+  }
+
+ .form-wrap .btn-3{
+    width: 70%;
+    margin: 0 auto;
+ }
+  
+.form-wrap .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: #608699 1px solid;
+    border-radius: 15px;
+    background-color: rgb(245, 239, 239);
+    color: black;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  footer a{
+    color: black;
+  }
+
+
+  
